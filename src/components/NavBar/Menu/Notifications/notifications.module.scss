@@ -1,0 +1,38 @@
+.dropdown {
+    position: relative;
+}
+
+.notifications {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 39px;
+    transition: width 0.5s;
+    cursor: pointer;
+    user-select: none;
+    img {
+        width: 27px;
+        height: 30px;
+    }
+    &:hover {
+        opacity: 0.8;
+        width: 43px;
+    }
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    background-color: var(--gray);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h6 {
+        color: white;
+        font-size: 11px;
+        font-weight: 700;
+    }
+}

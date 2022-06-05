@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.container {
+    height: 100px;
+    width: 1200px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}

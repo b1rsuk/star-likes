@@ -1,0 +1,25 @@
+.dropdown {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    border: 2px solid var(--violet);
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+
+.menu {
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    user-select: none;
+    padding: 10px;
+    border-bottom: 1px solid var(--violet);
+    cursor: pointer;
+    overflow: auto;
+    &:hover {
+        opacity: 0.5;
+    }
+    h5 {
+        margin: 0;
+    }
+}

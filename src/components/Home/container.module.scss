@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.window {
+    display: flex;
+    width: 1200px;
+    height: 800px;
+    border: 9px solid yellow;
+}
+
+.panel {
+    width: 100%;
+}

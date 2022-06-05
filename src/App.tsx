@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/panel/:id' element={<Home/>}/>
       </Routes>
     </BrowserRouter>
   );
