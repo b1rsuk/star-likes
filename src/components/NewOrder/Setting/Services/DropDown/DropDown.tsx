@@ -11,7 +11,7 @@ function DropDown(prop: {menu: string[], setMenu: Function, dropdown: IDropDown}
     return (
         <div className={style.dropdown} style={prop.dropdown.visible}>
             {
-                prop.menu.map((menu: string) => <div onClick={() => dropdown.choice(menu)} className={style.menu}>{menu}</div>)
+                prop.menu.map((menu: string, index: number) => <div key={index} onClick={() => dropdown.choice(menu)} className={style.menu}>{menu}</div>)
             }
         </div>
     );

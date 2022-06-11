@@ -5,7 +5,7 @@ export interface IMenu {
 
 interface IVisible {
     opacity: number;
-    'pointer-events': string;
+    pointerEvents: 'auto' | 'none';
 }
 
 class IDropDown {
@@ -26,7 +26,7 @@ class IDropDown {
     get visible(): IVisible {
         return {
             opacity: this._visibleDropDown? 1 : 0,
-            'pointer-events': this._visibleDropDown? '' : 'none',
+            pointerEvents: this._visibleDropDown? 'auto' : 'none',
         }
     };
 }

@@ -1,6 +1,6 @@
 interface IVisible {
     opacity: number,
-    'pointer-events': string;
+    pointerEvents: 'auto' | 'none'
 } 
 interface IArrowMode {
     transform: string;
@@ -16,7 +16,7 @@ class IDropDown {
     get visible(): IVisible {
         return {
             opacity: this.visibleDropDown? 1 : 0,
-            'pointer-events': this.visibleDropDown? '' : 'none'
+            pointerEvents: this.visibleDropDown? 'auto' : 'none'
         }
     }
 

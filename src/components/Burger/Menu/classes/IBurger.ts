@@ -1,6 +1,6 @@
 interface IVisible {
     opacity: number;
-    'pointer-events': string;
+    pointerEvents: 'auto' | 'none';
 }
 
 class IBurger {
@@ -15,7 +15,7 @@ class IBurger {
     get visible(): IVisible {
         return {
             opacity: this.visibleBurger ? 1 : 0,
-            'pointer-events': this.visibleBurger ? '' : 'none'
+            pointerEvents: this.visibleBurger ? 'auto' : 'none'
         }
     }
 

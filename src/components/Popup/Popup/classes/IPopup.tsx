@@ -1,6 +1,6 @@
 interface IVisible {
     opacity: number;
-    'pointer-events': string;
+    pointerEvents: 'auto' | 'none';
 }
 
 class IPopup {
@@ -13,7 +13,7 @@ class IPopup {
     get visible(): IVisible {
         return {
             opacity: this._visible? 1 : 0,
-            'pointer-events': this._visible? '' : 'none'
+            pointerEvents: this._visible? 'auto' : 'none'
         }
     }
 }

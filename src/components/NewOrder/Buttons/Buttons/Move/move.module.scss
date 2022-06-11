@@ -9,6 +9,11 @@
 .back {
     display: flex;
     align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
 
     h4 {
         font-weight: 700;
