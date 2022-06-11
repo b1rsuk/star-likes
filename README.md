@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+deploys: https://comfy-starship-ddcf4b.netlify.app/panel/new-order
 ## Available Scripts
 
 In the project directory, you can run:
