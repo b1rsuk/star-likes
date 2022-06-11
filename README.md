@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-deploys: https://comfy-starship-ddcf4b.netlify.app/
+deploys: tiny-boba-674b31.netlify.app
 ## Available Scripts
 
 In the project directory, you can run:
