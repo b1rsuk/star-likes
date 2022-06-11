@@ -1,0 +1,23 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        color: white;
+    }
+
+    img {
+        transition: opacity 0.5s;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        img {
+            opacity: 0.7;
+        }
+    }
+}

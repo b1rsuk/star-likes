@@ -1,0 +1,29 @@
+.container {
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+
+    h3 {
+        font-weight: 500;
+        font-size: 15px;
+        color: var(--violet_d7);
+    }
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    h5 {
+        font-weight: 500;
+        color: white;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+}

@@ -1,5 +1,4 @@
 .sidebar {
-    border: 2px solid blue;
     width: 400px;
 }
 
@@ -7,12 +6,15 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    user-select: none;
+    
     h4 {
         font-weight: 500;
         font-size: 20px;
         color: var(--violet_b6);
         margin-left: 30px;
     }
+
     &:hover {
         text-shadow: 0px 0px 27px var(--shadow_0f);
 
@@ -32,5 +34,11 @@
         div {
             border: 1px solid white !important;
         }
+    }
+}
+
+@media (max-width: 693px) {
+    .sidebar {
+        display: none;
     }
 }

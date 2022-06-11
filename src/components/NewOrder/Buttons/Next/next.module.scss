@@ -1,0 +1,16 @@
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.primary {
+    width: 222px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-left: 10px;
+    }
+}

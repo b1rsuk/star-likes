@@ -2,16 +2,18 @@ import { createSlice } from '@reduxjs/toolkit'
 
 export interface DropDownState {
     visibleProfile: boolean,
-    visibleNotifications: boolean
+    visibleNotifications: boolean,
+    visibleSetting: boolean
 }
 
 const initialState: DropDownState = {
   visibleProfile: false,
   visibleNotifications: false,
+  visibleSetting: false,
 }
 
-export const counterSlice = createSlice({
-  name: 'counter',
+export const dropdownSlice = createSlice({
+  name: 'dropdown',
   initialState,
   reducers: {
     setVisibleDropDownProfile: (state) => {
@@ -21,9 +23,14 @@ export const counterSlice = createSlice({
     setVisibleDropDownNotifications: (state) => {
         state.visibleProfile = false;
         state.visibleNotifications = !state.visibleNotifications
+    },
+    setVisibleDropDownSetting: (state) => {
+      state.visibleProfile = false;
+      state.visibleNotifications = false;
+      state.visibleSetting = !state.visibleSetting;
     }
   },
 })
 
-export const { setVisibleDropDownProfile, setVisibleDropDownNotifications } = counterSlice.actions
-export default counterSlice.reducer
+export const { setVisibleDropDownProfile, setVisibleDropDownNotifications, setVisibleDropDownSetting } = dropdownSlice.actions;
+export default dropdownSlice.reducer;

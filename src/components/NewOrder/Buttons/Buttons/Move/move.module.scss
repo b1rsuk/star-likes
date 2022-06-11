@@ -1,0 +1,25 @@
+.move {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+
+    h4 {
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    img {
+        width: 27px;
+        height: 27px;
+    }
+}

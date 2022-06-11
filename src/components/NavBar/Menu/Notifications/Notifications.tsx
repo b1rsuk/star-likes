@@ -1,12 +1,12 @@
 import style from './notifications.module.scss';
-import User from '../../classes/User/User';
+import IUser from '../../classes/User/IUser';
 import DropDown from '../../DropDown/DropDown';
 import IDropDown from '../../DropDown/classes/IDropDown';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../../app/store';
 import { setVisibleDropDownNotifications } from '../../../../app/features/dropdown/dropdownSlice';
 
-function Notifications(prop: {user: User}) {
+function Notifications(prop: {user: IUser}) {
   const visibleDropDown = useSelector((state: RootState) => state.dropdown.visibleNotifications);
   const dispatch = useDispatch();
   const dropdown = new IDropDown(visibleDropDown, () => dispatch(setVisibleDropDownNotifications()), [{value: 'Уведомление от Сани', click: () => alert('(Функция)')}]);
@@ -21,7 +21,7 @@ function Notifications(prop: {user: User}) {
       </div>
       <DropDown dropdown={dropdown}/>
     </section>
-  )
+  );
 }
 
-export default Notifications
+export default Notifications;

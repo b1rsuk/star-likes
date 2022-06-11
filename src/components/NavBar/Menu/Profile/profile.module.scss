@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+
     h4 {
         font-weight: 700;
         font-size: 20px;
@@ -15,14 +16,6 @@
     }
 }
 
-.circle {
-    width: 53px;
-    height: 53px;
-    margin-right: 16px;
-    background-color: turquoise;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
+.arrow {
+    user-select: none;
 }

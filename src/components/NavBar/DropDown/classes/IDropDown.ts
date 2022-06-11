@@ -3,6 +3,11 @@ export interface IMenu {
     click: Function;
 }
 
+interface IVisible {
+    opacity: number;
+    'pointer-events': string;
+}
+
 class IDropDown {
     private _setVisibleDropDown: Function = Function;
     public _visibleDropDown: boolean = false;
@@ -14,13 +19,13 @@ class IDropDown {
         this._menu = menu;
     } 
 
-    dropDown(): void {
+    public dropDown(): void {
         this._setVisibleDropDown();
     }
 
-    get visible() {
+    get visible(): IVisible {
         return {
-            opacity: this._visibleDropDown? '1' : '0',
+            opacity: this._visibleDropDown? 1 : 0,
             'pointer-events': this._visibleDropDown? '' : 'none',
         }
     };

@@ -7,11 +7,14 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 37px var(--shadow_8c);
+    user-select: none;
     cursor: pointer;
     transition: width 0.5s;
+
     &:hover {
         width: 120px;
     }
+
     h4 {
         font-weight: 700;
         font-size: 20px;

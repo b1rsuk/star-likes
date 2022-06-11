@@ -1,0 +1,17 @@
+.secondary {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    background-color: var(--mediumPurple);
+    border: 2px solid var(--gray);
+    box-shadow: 0px 0px 37px var(--shadow_8c);
+    border-radius: 17px;
+    cursor: pointer;
+    transition: box-shadow 1s;
+    transition: border-radius 1s;
+
+    &:hover {
+        border-top-left-radius: 5px;
+        box-shadow: 0px 0px 41px var(--purple);
+    }
+}

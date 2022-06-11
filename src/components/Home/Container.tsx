@@ -1,17 +1,20 @@
 import style from './container.module.scss';
 import SideBar from '../SideBar/SideBar';
-import SocialNetwork from '../SocialNetwork/SocialNetwork';
+import NewOrder from '../NewOrder/NewOrder';
+import { Fragment } from 'react';
 
 function Container() {
   return (
-    <section className={style.container}>
-      <div className={style.window}>
-        <SideBar />
-        <div className={style.panel}>
-          <SocialNetwork />
+    <Fragment>
+      <section className={style.container}>
+        <div className={style.window}>
+          <SideBar />
+          <div className={style.panel}>
+            <NewOrder />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Fragment>
   );
 }
 
