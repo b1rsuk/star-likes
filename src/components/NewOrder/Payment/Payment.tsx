@@ -6,7 +6,7 @@ import Buttons from "../Buttons/Buttons/Buttons";
 
 function Payment(prop: {step: number, setStep: Function}) {
   return (
-    <section>
+    <section className={style.payment}>
       <Title>Есть промокод?</Title>
       <div className={style.container}>
         <div className={style.input}>
